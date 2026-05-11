@@ -79,14 +79,25 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a
-          href="https://github.com/icypress99"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden md:flex items-center gap-2 text-sm font-mono px-4 py-2 border border-[var(--particle-primary)] text-[var(--particle-primary)] rounded hover:bg-[var(--particle-primary)] hover:text-[var(--bg)] transition-all duration-300"
-        >
-          GitHub
-        </a>
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href="/stats"
+            className="text-sm font-mono text-[var(--text-secondary)] hover:text-[var(--particle-primary)] transition-colors flex items-center gap-1.5"
+          >
+            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+            Repo Stats
+          </a>
+          <a
+            href="https://github.com/icypress99"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-mono px-4 py-2 border border-[var(--particle-primary)] text-[var(--particle-primary)] rounded hover:bg-[var(--particle-primary)] hover:text-[var(--bg)] transition-all duration-300"
+          >
+            GitHub
+          </a>
+        </div>
 
         {/* Mobile hamburger */}
         <button

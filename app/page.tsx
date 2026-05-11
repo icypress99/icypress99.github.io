@@ -5,7 +5,7 @@ import SkillsSection from "@/components/skills/SkillsSection";
 import ContactSection from "@/components/contact/ContactSection";
 
 export default function Home() {
-  return (
+  return ( 
     <main className="relative">
       <HeroSection />
       <AboutSection />
